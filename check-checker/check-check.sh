@@ -4,7 +4,7 @@
 # $1 ist Hostname
 # $2 ist sektion z.b. apt
 
-# Aufruf: 
+# Aufruf: check-check.sh 192.168.1.1 apt
 
 HOSTNAME=$1
 SECTION=$2
