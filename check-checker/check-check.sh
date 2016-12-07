@@ -12,7 +12,7 @@ SECTION=$2
 # nc -w secs         timeout for connects and final net reads
 
 
-SETISOK=$(nc $HOSTADDRESS 6556 -w 5 |  grep "^<<<$SECTION>>>")
+SETISOK=$(nc $HOSTNAME 6556 -w 5 |  grep "^<<<$SECTION>>>")
 
 if [ -z "$SETISOK" ]; then
     echo "CRITICAL - MONITORINGSET $SECTION CHECK IS NOT THERE"
